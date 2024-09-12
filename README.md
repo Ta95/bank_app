@@ -16,7 +16,32 @@ This project is a simple bank account management application built using **Java*
 
 The project follows a simple structure with separation between different layers:
 
-/src ├── /main │ ├── /java │ │ ├── /com/bankapp # Main app and utilities │ │ ├── /account # User and Account classes │ │ ├── /operation # Operation interfaces and concrete classes (Deposit, Withdrawal) │ │ ├── /exceptions # Custom exceptions │ │ ├── /db # In-memory database manager ├── /test # Unit tests /pom.xml # Maven build and dependencies
+/src
+  ├── /main
+  │     ├── /java
+  │     │     ├── /com
+  │     │     │    ├── /bankapp
+  │     │     │    │    ├── BankApp.java
+  │     │     │    ├── /account
+  │     │     │    │    ├── Account.java
+  │     │     │    │    ├── User.java
+  │     │     │    ├── /operation
+  │     │     │    │    ├── Operation.java
+  │     │     │    │    ├── Deposit.java
+  │     │     │    │    ├── Withdrawal.java
+  │     │     │    ├── /exceptions
+  │     │     │    │    ├── InvalidAmountException.java
+  │     │     │    │    ├── InsufficientBalanceException.java
+  │     │     │    ├── /db
+  │     │     │    │    ├── Database.java
+  ├── /test
+        ├── /java
+              ├── /com
+              │    ├── /bankapp
+              │    ├── /operation
+                    ├── DepositTest.java
+                    ├── WithdrawalTest.java
+/pom.xml
 
 
 ## How to Run the Project
